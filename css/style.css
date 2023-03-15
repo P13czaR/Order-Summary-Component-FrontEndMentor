@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  height: 640px;
+  width: 400px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card__hero-image {
+  height: 200px;
+  width: 500px;
+  background-image: url("../images/illustration-hero.svg");
+  background-size: contain;
+}
+.card__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 5em;
+}
+.card__text-title {
+  padding: 1.8em 0 0.5em;
+  font-weight: 900;
+  font-size: 2.6rem;
+  color: hsl(223, 47%, 23%);
+}
+.card__text-description {
+  margin-top: 0.5em;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+.card__price-box {
+  margin: 4em 4em;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__price-box__plan {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  align-items: flex-start;
+  width: 250px;
+  height: 50px;
+}
+.card__price-box__plan-icon {
+  margin-right: 2em;
+  background-image: url("../images/icon-music.svg");
+  width: 50px;
+  height: 50px;
+}
+.card__price-box__plan-title {
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: hsl(223, 47%, 23%);
+}
+.card__price-box__plan-price {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: hsl(224, 23%, 55%);
+}
+.card__price-box-link {
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.card__price-box-link:hover {
+  text-decoration: none;
+}
+.card__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.card__buttons-proceed {
+  width: 80%;
+  height: 60px;
+  border: transparent;
+  border-radius: 10px;
+  box-shadow: 0 15px 20px hsla(224, 23%, 55%, 0.6);
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.card__buttons-proceed:hover {
+  background-color: hsla(245, 75%, 52%, 0.9);
+}
+.card__buttons-cancel {
+  margin-top: 20px;
+  width: 80%;
+  height: 40px;
+  border: transparent;
+  background: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  cursor: pointer;
+}
+.card__buttons-cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .card {
+    scale: 0.95;
+  }
+}/*# sourceMappingURL=style.css.map */
